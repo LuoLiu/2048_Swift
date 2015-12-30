@@ -1,0 +1,13 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "61df86a8d497e11dcbf4ad591adabbd8"
+build_time: [504776859, 669976000]
+inputs:
+  "/Users/fenrir_cd08/Desktop/2048/2048/AppDelegate.swift": [504606575, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/OtherModels.swift": [504329076, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/AppearanceManager.swift": [504776425, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/GameModel.swift": [504775841, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/ViewController.swift": [504775592, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/TileView.swift": [504272638, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/GameboardView.swift": [504774753, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/OtherViews.swift": [504776107, 0]
+  "/Users/fenrir_cd08/Desktop/2048/2048/NumberGameViewController.swift": [504776425, 0]
