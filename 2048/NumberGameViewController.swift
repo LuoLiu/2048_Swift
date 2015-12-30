@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NumberGameViewController: UIViewController, GameModelProtocol {
+class NumberGameViewController: UIViewController, GameModelProtocol, UIAlertViewDelegate {
 
     // The number of tiles in every line/row
     var tileNumber: Int
@@ -197,9 +197,9 @@ class NumberGameViewController: UIViewController, GameModelProtocol {
         let (userWon, _) = m.userHasWon()
         if userWon {
             let alertView = UIAlertView()
-            alertView.title = "Victory"
-            alertView.message = "YOU WON!"
-            alertView.addButtonWithTitle("OK")
+            alertView.delegate = self
+            alertView.title = "You Win!"
+            alertView.addButtonWithTitle("Restart")
             alertView.show()
             return
         }
@@ -209,10 +209,15 @@ class NumberGameViewController: UIViewController, GameModelProtocol {
         
         if m.userHasLost() {
             let alertView = UIAlertView()
-            alertView.title = "> <"
-            alertView.message = "You lost..."
-            alertView.addButtonWithTitle("OK")
+            alertView.delegate = self
+            alertView.title = "You lost...>_<"
+            alertView.addButtonWithTitle("Try Again")
             alertView.show()
         }
+    }
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        reset()
+        setupGame()
     }
 }
